@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+dart create --template "$1" "$2"
