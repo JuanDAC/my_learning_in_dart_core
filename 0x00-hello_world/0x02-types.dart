@@ -16,7 +16,14 @@ void main() {
 
   /// var denife type data in time od compiler example
   var booleanWithoutType = true;
-  print('Typeless bool with value $booleanWithoutType');
+  print('''Typeless and automatic definede like a bool with value
+$booleanWithoutType''');
+
+  /// var cam make dynamic Variable When Use Const Without Initialize
+  var dynamicVariableConst;
+  dynamicVariableConst = true;
+  print('''Typeless whithout initialize automaticaly defined like a dynamic
+with value $dynamicVariableConst''');
 
   /// dynamic denife a type that you can change in run time
   dynamic dynamicVariable = true;
