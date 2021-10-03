@@ -1,5 +1,5 @@
-deleteAt([List<int>? myList = null, int index = 0]) {
-  if (myList == null) {
+List<int> deleteAt([List<int>? myList = null, int index = 0]) {
+  if (myList == null || index >= myList.length) {
     return [];
   }
   myList.removeAt(index);

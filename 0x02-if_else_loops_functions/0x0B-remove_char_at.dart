@@ -1,12 +1,11 @@
-String remove_char_at(String str, int n) {
-  String newString = '';
-  str.codeUnits.asMap().forEach((key, value) {
-    if (key != n) {
-      newString += String.fromCharCode(value);
-    }
-  });
-  return newString;
-}
+String remove_char_at(String str, int n) => str.codeUnits
+    .asMap()
+    .map<int, String>((key, value) => (key != n)
+        ? MapEntry(key, String.fromCharCode(value))
+        : MapEntry(key, ''))
+    .values
+    .toList()
+    .join();
 
 void main() {
   print(remove_char_at("Best School", 3));

@@ -1,6 +1,4 @@
-String no_c(String string) {
-  return string.split(new RegExp('C|c')).join('');
-}
+String no_c(String string) => string.split(new RegExp('C|c')).join('');
 
 void main() {
   print(no_c("Best School"));
